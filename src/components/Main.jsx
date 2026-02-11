@@ -1,7 +1,7 @@
 
 import Hero from "./Hero.jsx";
 import DreamTeam from "./DreamTeam.jsx";
-import OpeningCrawl from "../OpeningCrawl.jsx";
+import OpeningCrawl from "./OpeningCrawl.jsx";
 
 const Main = () => {
     return (

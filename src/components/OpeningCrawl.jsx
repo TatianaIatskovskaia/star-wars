@@ -1,4 +1,4 @@
-import {openingCrawl} from "./utils/constants.js";
+import {openingCrawl} from "../utils/constants.js";
 
 const OpeningCrawl = () => {
     return (
