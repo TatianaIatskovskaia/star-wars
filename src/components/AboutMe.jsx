@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
 import {about, base_url} from "../utils/constants.js";
 
-
 const AboutMe = () => {
     const [aboutMe, setAboutMe] = useState(null);
 
