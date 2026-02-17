@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {base_url} from "../utils/constants.js";
 
 const OpeningCrawl = () => {
-    const [openingCrawl, setOpeningCrawl] = useState();
+    const [openingCrawl, setOpeningCrawl] = useState(null);
 
     useEffect(() => {
         const episode = Math.floor(Math.random() * 6) + 1;
@@ -20,7 +20,7 @@ const OpeningCrawl = () => {
     } else {
         return (
             <p className="far-galaxy">
-                <div className="spinner-border text-muted"></div>
+                <span className="spinner-border text-warning"></span>
                 <span className="spinner-grow spinner-grow-sm">Loading...</span>
             </p>
         )
