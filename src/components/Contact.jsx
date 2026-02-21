@@ -24,7 +24,7 @@ const Contact = () => {
                 <label htmlFor="fname">First Name</label>
                 <input
                     type="text"
-                    id="ftname"
+                    id="fname"
                     name="firstname"
                     placeholder="Your name.."
                     value={formData.firstname}
