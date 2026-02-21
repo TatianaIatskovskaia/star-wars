@@ -21,20 +21,20 @@ const Contact = () => {
     return (
         <div className="container">
             <form>
-                <label htmlFor="firstname">First Name</label>
+                <label htmlFor="fname">First Name</label>
                 <input
                     type="text"
-                    id="firstname"
+                    id="ftname"
                     name="firstname"
                     placeholder="Your name.."
                     value={formData.firstname}
                     onChange={handleChange}
                 />
 
-                <label htmlFor="lastname">Last Name</label>
+                <label htmlFor="lname">Last Name</label>
                 <input
                     type="text"
-                    id="lastname"
+                    id="lname"
                     name="lastname"
                     placeholder="Your last name.."
                     value={formData.lastname}
