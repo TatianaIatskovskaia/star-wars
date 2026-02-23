@@ -17,19 +17,10 @@ const OpeningCrawl = () => {
         }
     }, [openingCrawl])
 
-    if (openingCrawl) {
         return (
-            <p className="far-galaxy">
+            <p className="text-3xl text-justify leading-normal tracking-widest">
                 {openingCrawl}
             </p>)
-    } else {
-        return (
-            <p className="far-galaxy">
-                <span className="spinner-border text-warning"></span>
-                <span className="spinner-grow spinner-grow-sm">Loading...</span>
-            </p>
-        )
-    }
 };
 
 export default OpeningCrawl;

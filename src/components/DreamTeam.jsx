@@ -3,8 +3,8 @@ import Friend from "./Friend.jsx";
 
 const DreamTeam = () => {
     return (
-        <section className="float-end w-50 row border border-warning rounded-bottom-5 my-1 ms-2 me-0">
-            <h2 className="col-sm-12 text-center">Dream team</h2>
+        <section className="float-right w-1/2 border rounded-b-3xl grid grid-cols-3 gap-1.5 mt-2 ml-2">
+            <h2 className="col-span-3 text-center text-2xl">Dream team</h2>
             {friends.map((friend, i) => <Friend key={friend} friend={friend} pos={i+1} />)}
         </section>
     );

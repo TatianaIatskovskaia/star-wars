@@ -1,6 +1,7 @@
 const NavItem = ({itemTitle, changePage}) => {
     return (
-        <li onClick={() => changePage(itemTitle)} className="nav-item btn btn-danger border-warning">{itemTitle}</li>
+        <div onClick={() => changePage(itemTitle)}
+             className="bg-danger border rounded-md px-3 cursor-pointer hover:bg-amber-950 hover:text-amber-200">{itemTitle}</div>
     );
 };
 

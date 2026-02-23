@@ -1,7 +1,10 @@
 const Footer = () => {
     return (
-        <footer className="rounded-bottom-5 row align-items-center mx-0">
-            <div className="btn btn-danger border-warning col-sm-2 offset-3">Send me email</div>
+        <footer className="clear-both rounded-b-3xl bg-gray h-20 grid grid-cols-10 items-center text-center">
+            <div
+                className="bg-danger border rounded-md px-3 cursor-pointer hover:bg-amber-950 hover:text-amber-200 col-start-3">Send
+                me email
+            </div>
         </footer>
     );
 };
