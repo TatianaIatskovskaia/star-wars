@@ -25,7 +25,7 @@ const Planets = () => {
     }, [planets])
 
     if (planets) {
-        return planets.map(planet => <option key={planet} value={planet}>{planet}</option>)
+        return planets.map(planet => <option className={'bg-gray'} key={planet} value={planet}>{planet}</option>)
     } else {
         return <option disabled>Error loading planets</option>;
     }

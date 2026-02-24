@@ -25,13 +25,13 @@ const AboutMe = () => {
 
     if (aboutMe) {
         return (
-            <div className={'clearfix'}>
-                <section className="float-start w-25 mt-1 me-3 mb-3">
-                    <img className="w-100" src={`${base_url}/${aboutMe.image}`} alt={`${aboutMe.name}`}/>
+            <div>
+                <section className={'float-left w-1/4 mt-2 mr-4 mb-4'}>
+                    <img className="w-full shadow-hero" src={`${base_url}/${aboutMe.image}`} alt={`${aboutMe.name}`}/>
                 </section>
                 <section>
                     {about.map((item) => <p key={item}
-                                            className={'text-capitalize far-galaxy'}>{item.replace('_', ' ')}: {aboutMe[item]}</p>)}
+                                            className={'text-3xl text-justify leading-normal tracking-widest capitalize'}>{item.replace('_', ' ')}: {aboutMe[item]}</p>)}
                 </section>
             </div>
 

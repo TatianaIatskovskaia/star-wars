@@ -19,49 +19,52 @@ const Contact = () => {
     }
 
     return (
-        <div className="container">
-            <form>
-                <label htmlFor="fname">First Name</label>
+        <div className={'flex items-center justify-center'}>
+            <form
+                className={'flex flex-col gap-4 border rounded-3xl mt-2 w-1/2 p-5 bg-gray mb-2 text-3xl leading-normal tracking-widest'}>
+                <label className={'w-full'}>First Name
+                    <input
+                        className={'w-full border rounded-md p-3 box-border mt-1.5 mb-4 resize-y'}
+                        type="text"
+                        name="firstname"
+                        placeholder="Your name.."
+                        value={formData.firstname}
+                        onChange={handleChange}
+                    />
+                </label>
+                <label className={'w-full'}>Last Name
+                    <input
+                        className={'w-full border rounded-md p-3 box-border mt-1.5 mb-4 resize-y'}
+                        type="text"
+                        name="lastname"
+                        placeholder="Your last name.."
+                        value={formData.lastname}
+                        onChange={handleChange}
+                    />
+                </label>
+                <label className={'w-full'}>Planet
+                    <select
+                        className={'w-full border rounded-md p-3 box-border mt-1.5 mb-4 resize-y'}
+                        name="planet"
+                        value={formData.planet}
+                        onChange={handleChange}
+                    >
+                        <Planets/>
+                    </select>
+                </label>
+                <label className={'w-full'}>Subject
+                    <textarea
+                        className={'w-full border rounded-md p-3 box-border mt-1.5 mb-4 resize-y'}
+                        name="subject"
+                        placeholder="Write something.."
+                        style={{height: '200px'}}
+                        value={formData.subject}
+                        onChange={handleChange}
+                    ></textarea>
+                </label>
                 <input
-                    type="text"
-                    id="fname"
-                    name="firstname"
-                    placeholder="Your name.."
-                    value={formData.firstname}
-                    onChange={handleChange}
-                />
-
-                <label htmlFor="lname">Last Name</label>
-                <input
-                    type="text"
-                    id="lname"
-                    name="lastname"
-                    placeholder="Your last name.."
-                    value={formData.lastname}
-                    onChange={handleChange}
-                />
-
-                <label htmlFor="planet">Planet</label>
-                <select
-                    id="planet"
-                    name="planet"
-                    value={formData.planet}
-                    onChange={handleChange}
-                >
-                    <Planets/>
-                </select>
-
-                <label htmlFor="subject">Subject</label>
-                <textarea
-                    id="subject"
-                    name="subject"
-                    placeholder="Write something.."
-                    style={{height: '200px'}}
-                    value={formData.subject}
-                    onChange={handleChange}
-                ></textarea>
-
-                <input className={'btn btn-danger border-warning'} type="submit" value="Submit"/>
+                    className={'bg-danger border rounded-md px-3 cursor-pointer hover:bg-amber-950 hover:text-amber-200 w-1/4 mb-2 ml-auto'}
+                    type="submit" value="Submit"/>
             </form>
         </div>
     );
