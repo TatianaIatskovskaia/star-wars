@@ -8,10 +8,14 @@ import {NavContext} from "./utils/context.js";
 function App() {
     const [page, setPage] = useState(navItems[0]);
 
+    const changePage = (page) => {
+        setPage(page)
+    }
+
     return (
         <div className='mx-2'>
             <NavContext value={{
-                page, setPage
+                page, changePage
             }}>
                 <Header/>
                 <Main/>
